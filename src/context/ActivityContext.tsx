@@ -14,7 +14,7 @@ type ActivityContextProps ={
 
 //Se define un componente funcional llamado ActivityProvider que acepta un objeto con una propiedad children de tipo ReactNode.
 //Este componente se encargará de proporcionar el valor del contexto a sus componentes hijos.
-export const ActivityContext = createContext<ActivityContextProps>(null!)//confia en mi significa ese null
+export const ActivityContext = createContext<ActivityContextProps>(null!)//confia en mi significa ese null-lo que indica que el contexto está inicialmente vacío y será reemplazado por el Provider.
 
 
 export const ActivityProvider = ({children}:ActivityProviderProps) =>{

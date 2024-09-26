@@ -1,3 +1,5 @@
+//aqui cinfiguramos todo nuestro context y nuestro provider
+
 //createContext-Esta función se utiliza para crear un nuevo contexto. Un contexto es una forma de compartir datos entre componentes sin tener que pasar props a través de múltiples niveles.
 //ReactNode: Este tipo representa cualquier elemento válido de React, como componentes, texto o fragmentos.
 import {createContext, Dispatch, ReactNode, useReducer } from "react";

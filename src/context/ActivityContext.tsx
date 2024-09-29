@@ -30,7 +30,7 @@ export const ActivityProvider = ({children}:ActivityProviderProps) =>{
     
     // Contadores
     const caloriesConsumed = useMemo(() => state.activities.reduce((total, activity) => activity.category === 1 ? total + activity.calories : total, 0), [ state.activities])
-    const caloriesBurned = useMemo(() =>  state.activities.reduce((total, activity) => activity.category === 2 ? total + activity.calories : total, 0), [ state.ctivities])
+    const caloriesBurned = useMemo(() =>  state.activities.reduce((total, activity) => activity.category === 2 ? total + activity.calories : total, 0), [ state.activities])
     const netCalories = useMemo(() => caloriesConsumed - caloriesBurned, [ state.activities])
     
 
